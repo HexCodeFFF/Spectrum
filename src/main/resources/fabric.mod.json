@@ -63,5 +63,17 @@
   },
   "breaks": {
     "Dashloader": "<=3.0.9"
+  },
+  "launchwrapper": {
+    "tweakers": {
+      "client": [
+        "de.dafuqs.spectrum.tweakers.SpectrumClientTweaker"
+      ],
+      "common": [
+      ],
+      "server": [
+        "de.dafuqs.spectrum.tweakers.SpectrumServerTweaker"
+      ]
+    }
   }
 }

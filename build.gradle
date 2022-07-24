@@ -59,20 +59,27 @@ repositories {
 		name = "ProgrammerArtInjector"
 		url = 'https://maven.extracraftx.com'
 	}
-
 	maven {
 		name = "Shimmer"
 		url = 'https://maven.firstdarkdev.xyz/snapshots'
 	}
-
 	maven {
 		url 'https://cfa2.cursemaven.com'
+	}
+	maven {
+		name = 'Mojang'
+		url = 'https://libraries.minecraft.net/'
 	}
 }
 
 dependencies {
 	// jetbrains annotations @Nullabe @NotNull
 	implementation 'org.jetbrains:annotations:23.0.0'
+
+	// minecraft
+	compileOnly ('net.minecraft:launchwrapper:1.12') {
+		transitive = false
+	}
 
 	// fabric
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
